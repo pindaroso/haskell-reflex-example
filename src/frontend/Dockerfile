@@ -5,7 +5,7 @@ RUN echo 'deb http://download.fpcomplete.com/debian jessie main' | \
     tee /etc/apt/sources.list.d/fpco.list
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y \
     curl bzip2 build-essential zlib1g zlib1g-dev stack libtinfo-dev libncurses5-dev libncursesw5-dev \
-	python
+    python
 ENV U robot
 RUN useradd -ms /bin/bash $U
 RUN groupadd nixbld && usermod -a -G nixbld $U
