@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it reflex_frontend_1 bash
