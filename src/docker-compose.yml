@@ -3,9 +3,8 @@ version: "2"
 services:
     frontend:
         build: ./frontend
-        command: tail -f /dev/null
+        command: ./command.sh
         ports:
-         - 80:80
          - 8000:8000
         volumes:
          - ./frontend:/opt/frontend

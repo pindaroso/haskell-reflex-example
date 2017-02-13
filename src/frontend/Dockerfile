@@ -21,3 +21,4 @@ RUN . $HOME/.nix-profile/etc/profile.d/nix.sh && \
 RUN echo ". $HOME/.nix-profile/etc/profile.d/nix.sh" >> ~/.bashrc
 RUN git clone https://github.com/reflex-frp/reflex-platform /opt/reflex-platform
 WORKDIR /opt/reflex-platform
+ADD command.sh command.sh
