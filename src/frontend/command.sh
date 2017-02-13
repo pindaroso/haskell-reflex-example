@@ -1,4 +1,4 @@
 #!/bin/bash
 ./try-reflex
-cd ../frontend
+cd ../frontend/hello.jsexe
 python -m SimpleHTTPServer
